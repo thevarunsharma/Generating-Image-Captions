@@ -1,0 +1,14 @@
+<html>
+<body>
+  <h1 align='center'>GENERATING IMAGE CAPTIONS</h1>
+  <center>
+  <form action = "" method = "POST" enctype = "multipart/form-data">
+    <input type = "file" name = "file">
+    <input type = "submit" value="Upload Image">
+  </form></center>
+  {% if after %}
+  <h2 align='center'>{{caption}}</h2>
+  <br><center><img src="{{url_for('static', filename=imgname)}}" width="500vw"></center>
+  {% endif %}
+</body>
+</html>
